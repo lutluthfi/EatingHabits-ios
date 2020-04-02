@@ -11,9 +11,9 @@
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10AD243576BD0010838A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AC243576BD0010838A /* ViewController.swift */; };
 		4FFB10B0243576BD0010838A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10AE243576BD0010838A /* Main.storyboard */; };
-		4FFB10B3243576BD0010838A /* EatingHabits.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10B1243576BD0010838A /* EatingHabits.xcdatamodeld */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
 		4FFB10B8243576C00010838A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B6243576C00010838A /* LaunchScreen.storyboard */; };
+		4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10C5243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AC243576BD0010838A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FFB10AF243576BD0010838A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4FFB10B2243576BD0010838A /* EatingHabits.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatingHabits.xcdatamodel; sourceTree = "<group>"; };
 		4FFB10B4243576C00010838A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FFB10B7243576C00010838A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FFB10B9243576C00010838A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFB10C6243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatingHabitsCoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +58,64 @@
 		4FFB10A7243576BD0010838A /* EatingHabits */ = {
 			isa = PBXGroup;
 			children = (
+				4FFB10C2243576FF0010838A /* Data */,
+				4FFB10C1243576F10010838A /* Presentation */,
+				4FFB10BF243576CC0010838A /* Application */,
+				4FFB10C0243576D40010838A /* Resources */,
+			);
+			path = EatingHabits;
+			sourceTree = "<group>";
+		};
+		4FFB10BF243576CC0010838A /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				4FFB10A8243576BD0010838A /* AppDelegate.swift */,
 				4FFB10AA243576BD0010838A /* SceneDelegate.swift */,
-				4FFB10AC243576BD0010838A /* ViewController.swift */,
-				4FFB10AE243576BD0010838A /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4FFB10C0243576D40010838A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				4FFB10B4243576C00010838A /* Assets.xcassets */,
 				4FFB10B6243576C00010838A /* LaunchScreen.storyboard */,
 				4FFB10B9243576C00010838A /* Info.plist */,
-				4FFB10B1243576BD0010838A /* EatingHabits.xcdatamodeld */,
 			);
-			path = EatingHabits;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FFB10C1243576F10010838A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB10AC243576BD0010838A /* ViewController.swift */,
+				4FFB10AE243576BD0010838A /* Main.storyboard */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4FFB10C2243576FF0010838A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB10C4243577090010838A /* UserDefaultStorage */,
+				4FFB10C3243577030010838A /* CoreDataStorage */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4FFB10C3243577030010838A /* CoreDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4FFB10C5243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld */,
+			);
+			path = CoreDataStorage;
+			sourceTree = "<group>";
+		};
+		4FFB10C4243577090010838A /* UserDefaultStorage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaultStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FFB10B3243576BD0010838A /* EatingHabits.xcdatamodeld in Sources */,
 				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
+				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +338,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
-				INFOPLIST_FILE = EatingHabits/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EatingHabits/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.EatingHabits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +357,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U7M39KWXM;
-				INFOPLIST_FILE = EatingHabits/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/EatingHabits/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.EatingHabits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -344,13 +394,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4FFB10B1243576BD0010838A /* EatingHabits.xcdatamodeld */ = {
+		4FFB10C5243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				4FFB10B2243576BD0010838A /* EatingHabits.xcdatamodel */,
+				4FFB10C6243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodel */,
 			);
-			currentVersion = 4FFB10B2243576BD0010838A /* EatingHabits.xcdatamodel */;
-			path = EatingHabits.xcdatamodeld;
+			currentVersion = 4FFB10C6243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodel */;
+			path = EatingHabitsCoreDataStorage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
