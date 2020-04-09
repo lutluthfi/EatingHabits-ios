@@ -40,14 +40,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foc-K3-FgG">
-                                <rect key="frame" x="20" y="330" width="38" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foc-K3-FgG">
+                                <rect key="frame" x="20" y="330" width="374" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EatTime" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-ZP-Sh7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-ZP-Sh7">
                                 <rect key="frame" x="0.0" y="56" width="414" height="247"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1B-Kr-AT1">
@@ -69,12 +69,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Recommendation Time" id="90n-FA-kXU">
                         <barButtonItem key="rightBarButtonItem" title="Close" id="Zde-Qv-BnZ">
-                            <color key="tintColor" red="0.60784313729999995" green="0.3921568627" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="CloseBtn:" destination="HTZ-03-pAX" id="tb1-ZQ-sG3"/>
+                                <action selector="closeBtn:" destination="HTZ-03-pAX" id="tb1-ZQ-sG3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bodyLabel" destination="g1B-Kr-AT1" id="ai0-xH-ciD"/>
+                        <outlet property="closeBtnLabel" destination="Zde-Qv-BnZ" id="yCF-GI-9eI"/>
+                        <outlet property="imageBanner" destination="ZGM-ZP-Sh7" id="Rrc-5L-5eK"/>
+                        <outlet property="titleLable" destination="Foc-K3-FgG" id="ctc-AA-37m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjP-4J-tqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +105,4 @@
             <point key="canvasLocation" x="40.579710144927539" y="61.607142857142854"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="EatTime" width="1846" height="1230"/>
-    </resources>
 </document>
