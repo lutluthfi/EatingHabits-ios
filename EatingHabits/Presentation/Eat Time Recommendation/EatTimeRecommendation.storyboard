@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xdj-Lr-san">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -7,20 +7,100 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Eat Time RecommendationVC View Controller-->
+        <!--View Controller-->
+        <scene sceneID="VEj-3E-alb">
+            <objects>
+                <viewController id="Xdj-Lr-san" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VZf-MB-Ej5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3L-bP-3BO">
+                                <rect key="frame" x="117" y="433" width="180" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="See recommendation time"/>
+                                <connections>
+                                    <segue destination="XAi-Uq-Hwz" kind="show" id="Hud-T4-sCB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qmK-nD-Ovo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSi-Lr-QAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-807" y="62"/>
+        </scene>
+        <!--Recommendation Time-->
         <scene sceneID="XH6-o2-q5W">
             <objects>
                 <viewController id="HTZ-03-pAX" customClass="EatTimeRecommendationVCViewController" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eHn-zi-F5c">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foc-K3-FgG">
+                                <rect key="frame" x="20" y="330" width="38" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EatTime" translatesAutoresizingMaskIntoConstraints="NO" id="ZGM-ZP-Sh7">
+                                <rect key="frame" x="0.0" y="56" width="414" height="247"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Body" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1B-Kr-AT1">
+                                <rect key="frame" x="20" y="362" width="374" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZGM-ZP-Sh7" firstAttribute="top" secondItem="ANZ-Am-nnh" secondAttribute="top" id="4vi-Ia-c2D"/>
+                            <constraint firstItem="ANZ-Am-nnh" firstAttribute="trailing" secondItem="ZGM-ZP-Sh7" secondAttribute="trailing" id="bgD-Pw-ffR"/>
+                            <constraint firstItem="ZGM-ZP-Sh7" firstAttribute="leading" secondItem="ANZ-Am-nnh" secondAttribute="leading" id="qvK-xT-E6w"/>
+                            <constraint firstItem="ANZ-Am-nnh" firstAttribute="bottom" secondItem="ZGM-ZP-Sh7" secondAttribute="bottom" constant="505" id="snA-Bp-Bc1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ANZ-Am-nnh"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Recommendation Time" id="90n-FA-kXU">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="Zde-Qv-BnZ">
+                            <color key="tintColor" red="0.60784313729999995" green="0.3921568627" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="CloseBtn:" destination="HTZ-03-pAX" id="tb1-ZQ-sG3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjP-4J-tqP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="62"/>
+            <point key="canvasLocation" x="950.72463768115949" y="61.607142857142854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FKG-bv-AQP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XAi-Uq-Hwz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="M2V-Ff-XwV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gVs-hN-a8a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HTZ-03-pAX" kind="relationship" relationship="rootViewController" id="8eT-Zs-oQo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iLb-4T-15H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="61.607142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="EatTime" width="1846" height="1230"/>
+    </resources>
 </document>
