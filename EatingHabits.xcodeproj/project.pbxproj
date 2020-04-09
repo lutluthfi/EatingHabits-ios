@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A33C14D243F1BB0009B9E1D /* EatTimeRecommendation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C14C243F1BB0009B9E1D /* EatTimeRecommendation.storyboard */; };
-		2A33C14F243F1BF0009B9E1D /* EatTimeRecommendationVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C14E243F1BF0009B9E1D /* EatTimeRecommendationVCViewController.swift */; };
+		2A33C151243F8CAD009B9E1D /* EatTimeRecommendationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C150243F8CAD009B9E1D /* EatTimeRecommendationVC.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10AD243576BD0010838A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AC243576BD0010838A /* ViewController.swift */; };
@@ -20,7 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2A33C14C243F1BB0009B9E1D /* EatTimeRecommendation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EatTimeRecommendation.storyboard; sourceTree = "<group>"; };
-		2A33C14E243F1BF0009B9E1D /* EatTimeRecommendationVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatTimeRecommendationVCViewController.swift; sourceTree = "<group>"; };
+		2A33C150243F8CAD009B9E1D /* EatTimeRecommendationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatTimeRecommendationVC.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		2A33C14B243F1B8F009B9E1D /* Eat Time Recommendation */ = {
 			isa = PBXGroup;
 			children = (
-				2A33C14E243F1BF0009B9E1D /* EatTimeRecommendationVCViewController.swift */,
+				2A33C150243F8CAD009B9E1D /* EatTimeRecommendationVC.swift */,
 				2A33C14C243F1BB0009B9E1D /* EatTimeRecommendation.storyboard */,
 			);
 			path = "Eat Time Recommendation";
@@ -204,9 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A33C14F243F1BF0009B9E1D /* EatTimeRecommendationVCViewController.swift in Sources */,
 				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
+				2A33C151243F8CAD009B9E1D /* EatTimeRecommendationVC.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 			);
