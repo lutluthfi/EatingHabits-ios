@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1077362440553900994C8F /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077352440553900994C8F /* AchievementCell.swift */; };
+		2A10773824414E8000994C8F /* AchievementSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773724414E8000994C8F /* AchievementSection.swift */; };
+		2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077392441570D00994C8F /* SectionHeader.swift */; };
 		2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* Achievement.storyboard */; };
 		2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C155243F9B94009B9E1D /* AchievementVC.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A1077352440553900994C8F /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		2A10773724414E8000994C8F /* AchievementSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSection.swift; sourceTree = "<group>"; };
+		2A1077392441570D00994C8F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		2A33C153243F9B3E009B9E1D /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
 		2A33C155243F9B94009B9E1D /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +54,9 @@
 			children = (
 				2A33C155243F9B94009B9E1D /* AchievementVC.swift */,
 				2A33C153243F9B3E009B9E1D /* Achievement.storyboard */,
+				2A10773724414E8000994C8F /* AchievementSection.swift */,
+				2A1077392441570D00994C8F /* SectionHeader.swift */,
+				2A1077352440553900994C8F /* AchievementCell.swift */,
 			);
 			path = Achievement;
 			sourceTree = "<group>";
@@ -205,10 +214,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
+				2A1077362440553900994C8F /* AchievementCell.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
+				2A10773824414E8000994C8F /* AchievementSection.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
+				2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
