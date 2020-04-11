@@ -92,11 +92,11 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="-400"/>
         </scene>
-        <!--Item 1-->
+        <!--Achievement-->
         <scene sceneID="lta-zw-btE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SPn-wN-Dxi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="bCA-Ft-9Ys"/>
+                    <tabBarItem key="tabBarItem" title="Achievement" image="rosette" catalog="system" id="bCA-Ft-9Ys"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0tQ-tO-Fy5">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -112,4 +112,7 @@
             <point key="canvasLocation" x="-223.18840579710147" y="-400.44642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rosette" catalog="system" width="100" height="128"/>
+    </resources>
 </document>

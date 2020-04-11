@@ -13,10 +13,10 @@ class AchievementVC: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     
     let section = [
-        SectionHeader(section: "Silver", badgeName: ""),
-        SectionHeader(section: "Gold", badgeName: ""),
-        SectionHeader(section: "Onyx", badgeName: ""),
-        SectionHeader(section: "Ruby", badgeName: "")
+        SectionHeader(section: "Silver", badgeName: "LockedAchievement"),
+        SectionHeader(section: "Gold", badgeName: "LockedAchievement"),
+        SectionHeader(section: "Onyx", badgeName: "LockedAchievement"),
+        SectionHeader(section: "Ruby", badgeName: "LockedAchievement")
     ]
     
     
@@ -61,14 +61,15 @@ extension AchievementVC: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "achievementCell", for: indexPath) as? AchievementCell {
-            cell.badgeImg.image = UIImage(named: "LockedAchievement")
+            let badgeImage = self.section[indexPath.row]
+            cell.badgeImg.image = UIImage(named: "\(badgeImage.badgeName)")
             return cell
         }
         return AchievementCell()
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return section.count
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -83,9 +84,3 @@ extension AchievementVC: UICollectionViewDataSource {
     }
     
 }
-
-// Mark: To make space in between the items
-//
-//extension AchievementVC: UICollectionViewDelegateFlowLayout{
-//
-//}
