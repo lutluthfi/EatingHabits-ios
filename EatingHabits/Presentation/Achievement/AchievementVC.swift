@@ -12,8 +12,10 @@ class AchievementVC: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     
+    var selectedImage: UIImage!
+    
     let section = [
-        SectionHeader(section: "Silver", badgeName: "LockedAchievement"),
+        SectionHeader(section: "Silver", badgeName: "imagePlaceholder"),
         SectionHeader(section: "Gold", badgeName: "LockedAchievement"),
         SectionHeader(section: "Onyx", badgeName: "LockedAchievement"),
         SectionHeader(section: "Ruby", badgeName: "LockedAchievement")
@@ -29,19 +31,7 @@ class AchievementVC: UIViewController {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Achievement"
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -49,7 +39,10 @@ extension AchievementVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        print("You tapped")
+        let category = section[indexPath.section]
+        selectedImage = UIImage(named: category.badgeName)
+        
+        performSegue(withIdentifier: "achievementDetails", sender: category)
     }
 
 }

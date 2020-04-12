@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fn6-zR-b9S">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zig-JL-1bb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -69,6 +69,7 @@
                     <navigationItem key="navigationItem" id="LUV-z4-iiE"/>
                     <connections>
                         <outlet property="collectionView" destination="KE3-qa-Q1p" id="lBZ-mQ-Em7"/>
+                        <segue destination="fn6-zR-b9S" kind="modal" identifier="achievementDetails" id="yJ6-4V-m17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zUr-pU-HiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -80,7 +81,7 @@
             <objects>
                 <viewController id="fn6-zR-b9S" customClass="AchievementDetailsVC" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5e-BY-7RB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-h2-N5h" customClass="RadialGradientView" customModule="EatingHabits" customModuleProvider="target">
@@ -100,7 +101,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="vQn-Ed-JNl">
-                                <rect key="frame" x="20" y="124" width="375" height="435"/>
+                                <rect key="frame" x="20" y="80" width="375" height="435"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmF-hz-n7z">
                                         <rect key="frame" x="147.5" y="0.0" width="80.5" height="41"/>
@@ -130,11 +131,14 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRs-aw-Dfg">
-                                <rect key="frame" x="36" y="776" width="343" height="50"/>
+                                <rect key="frame" x="36" y="732" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cuX-bo-mp1"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJT-ue-ktZ">
-                                <rect key="frame" x="191" y="733" width="33" height="16"/>
+                                <rect key="frame" x="191" y="689" width="33" height="16"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -156,6 +160,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LwN-OJ-tEq"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mBZ-Vq-0v5"/>
                     <connections>
                         <outlet property="achievementDescription" destination="NJT-ue-ktZ" id="TZT-D8-oOZ"/>
                         <outlet property="achievementImage" destination="dB0-jT-RKc" id="4RS-eu-icH"/>

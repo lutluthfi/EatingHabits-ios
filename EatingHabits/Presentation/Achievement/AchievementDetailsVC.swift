@@ -15,7 +15,11 @@ class AchievementDetailsVC: UIViewController {
     @IBOutlet weak var footerLabel: UILabel!
     @IBOutlet weak var achievementDescription: UILabel!
     @IBOutlet weak var boardBtn: UIButton!
-
+    
+    var image: UIImage!
+    var header: String!
+    var footer: String!
+    var desc: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +29,11 @@ class AchievementDetailsVC: UIViewController {
         boardBtn.backgroundColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.3)
         boardBtn.layer.cornerRadius = 8
         
-        view.backgroundColor = .brown
+        headerLabel.text = header
+        achievementImage.image = image
+        footerLabel.text = footer
+        achievementDescription.text = desc
+        
     }
     
 

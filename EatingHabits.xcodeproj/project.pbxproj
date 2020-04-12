@@ -60,8 +60,8 @@
 				2A33C153243F9B3E009B9E1D /* Achievement.storyboard */,
 				2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */,
 				2A10773724414E8000994C8F /* AchievementSection.swift */,
-				2A1077392441570D00994C8F /* SectionHeader.swift */,
 				2A1077352440553900994C8F /* AchievementCell.swift */,
+				2A1077392441570D00994C8F /* SectionHeader.swift */,
 				2A10773D2441DBB200994C8F /* RadialGradientView.swift */,
 			);
 			path = Achievement;
