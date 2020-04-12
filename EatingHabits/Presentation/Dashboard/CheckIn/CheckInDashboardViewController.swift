@@ -47,10 +47,10 @@ class CheckInDashboardViewController: UIViewController {
     
     private func setupViewDidLoad() {
         self.checkInButton.clipsToBounds = true
-        self.checkInButton.layer.cornerRadius = 8
+        self.checkInButton.layer.cornerRadius = 16
         
         self.currentTimeVisualEffectView.clipsToBounds = true
-        self.currentTimeVisualEffectView.layer.cornerRadius = 8
+        self.currentTimeVisualEffectView.layer.cornerRadius = 16
     }
     
     private func showSuccessCheckIn() {

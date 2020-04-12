@@ -16,6 +16,11 @@
 		4F4A2EB224433932005E43EF /* HistoryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB124433932005E43EF /* HistoryDashboardViewController.swift */; };
 		4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */; };
 		4F4A2EB6244339C8005E43EF /* AchievementDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */; };
+		4F4A2EB924434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */; };
+		4F4A2EBF2443669B005E43EF /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EBE2443669B005E43EF /* CoreDataStorage.swift */; };
+		4F4A2EC1244366FB005E43EF /* MealTimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */; };
+		4F4A2EC424436754005E43EF /* MealTimeEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */; };
+		4F4A2EC62443675E005E43EF /* MealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC52443675E005E43EF /* MealTime.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 		4F4A2EB124433932005E43EF /* HistoryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDashboardViewController.swift; sourceTree = "<group>"; };
 		4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDashboardViewController.swift; sourceTree = "<group>"; };
 		4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDashboardViewController.swift; sourceTree = "<group>"; };
+		4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTimeCheckInDashboardViewController.swift; sourceTree = "<group>"; };
+		4F4A2EBE2443669B005E43EF /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeStorage.swift; sourceTree = "<group>"; };
+		4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealTimeEntity+Mapping.swift"; sourceTree = "<group>"; };
+		4F4A2EC52443675E005E43EF /* MealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTime.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +80,7 @@
 			children = (
 				4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */,
 				4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */,
+				4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -99,6 +110,22 @@
 				4F4A2EB124433932005E43EF /* HistoryDashboardViewController.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		4F4A2EBB24436431005E43EF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A2EC52443675E005E43EF /* MealTime.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4F4A2EC224436737005E43EF /* DAO+Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */,
+			);
+			path = "DAO+Mapping";
 			sourceTree = "<group>";
 		};
 		4FFB109C243576BD0010838A = {
@@ -158,6 +185,7 @@
 		4FFB10C2243576FF0010838A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				4F4A2EBB24436431005E43EF /* Entity */,
 				4FFB10C4243577090010838A /* UserDefaultStorage */,
 				4FFB10C3243577030010838A /* CoreDataStorage */,
 			);
@@ -167,7 +195,10 @@
 		4FFB10C3243577030010838A /* CoreDataStorage */ = {
 			isa = PBXGroup;
 			children = (
+				4F4A2EC224436737005E43EF /* DAO+Mapping */,
 				4FFB10C5243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld */,
+				4F4A2EBE2443669B005E43EF /* CoreDataStorage.swift */,
+				4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -255,8 +286,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F4A2EB6244339C8005E43EF /* AchievementDashboardViewController.swift in Sources */,
+				4F4A2EB924434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift in Sources */,
+				4F4A2EC424436754005E43EF /* MealTimeEntity+Mapping.swift in Sources */,
 				4F4A2EB224433932005E43EF /* HistoryDashboardViewController.swift in Sources */,
+				4F4A2EC1244366FB005E43EF /* MealTimeStorage.swift in Sources */,
+				4F4A2EBF2443669B005E43EF /* CoreDataStorage.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
+				4F4A2EC62443675E005E43EF /* MealTime.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 				4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */,
