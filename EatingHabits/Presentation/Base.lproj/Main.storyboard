@@ -33,10 +33,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="Dnk-bb-Rea" kind="show" id="oiP-J0-cpg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--Dashboard-Storyboard-->
+        <scene sceneID="HPE-A6-XDe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard-Storyboard" id="Dnk-bb-Rea" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ICX-yc-4Ij"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vnj-5n-jA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778" y="93"/>
         </scene>
     </scenes>
 </document>

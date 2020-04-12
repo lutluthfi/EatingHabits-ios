@@ -14,6 +14,8 @@
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
 		4FFB10B8243576C00010838A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B6243576C00010838A /* LaunchScreen.storyboard */; };
 		4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10C5243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld */; };
+		7116DA72243DD2B900FBE0E9 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7116DA71243DD2B900FBE0E9 /* DashboardVC.swift */; };
+		7116DA74243DD30300FBE0E9 /* Dashboard-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7116DA73243DD30300FBE0E9 /* Dashboard-Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		4FFB10B7243576C00010838A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FFB10B9243576C00010838A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FFB10C6243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EatingHabitsCoreDataStorage.xcdatamodel; sourceTree = "<group>"; };
+		7116DA71243DD2B900FBE0E9 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		7116DA73243DD30300FBE0E9 /* Dashboard-Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Dashboard-Storyboard.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		4FFB10C1243576F10010838A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7116DA70243DD27D00FBE0E9 /* Dashboard-1 */,
 				4FFB10AC243576BD0010838A /* ViewController.swift */,
 				4FFB10AE243576BD0010838A /* Main.storyboard */,
 			);
@@ -116,6 +121,15 @@
 			children = (
 			);
 			path = UserDefaultStorage;
+			sourceTree = "<group>";
+		};
+		7116DA70243DD27D00FBE0E9 /* Dashboard-1 */ = {
+			isa = PBXGroup;
+			children = (
+				7116DA71243DD2B900FBE0E9 /* DashboardVC.swift */,
+				7116DA73243DD30300FBE0E9 /* Dashboard-Storyboard.storyboard */,
+			);
+			path = "Dashboard-1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7116DA74243DD30300FBE0E9 /* Dashboard-Storyboard.storyboard in Resources */,
 				4FFB10B8243576C00010838A /* LaunchScreen.storyboard in Resources */,
 				4FFB10B5243576C00010838A /* Assets.xcassets in Resources */,
 				4FFB10B0243576BD0010838A /* Main.storyboard in Resources */,
@@ -190,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
+				7116DA72243DD2B900FBE0E9 /* DashboardVC.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
