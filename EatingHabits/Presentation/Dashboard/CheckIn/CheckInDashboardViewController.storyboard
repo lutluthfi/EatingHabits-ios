@@ -29,6 +29,9 @@
                                 <state key="normal" title="Check In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="onCheckInButtonTouchUpInside:" destination="bjB-lu-1eE" eventType="touchUpInside" id="sgl-nO-VNU"/>
+                                </connections>
                             </button>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sv8-cw-s8Y">
                                 <rect key="frame" x="16" y="525" width="382" height="190"/>
@@ -67,6 +70,7 @@
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <gestureRecognizers/>
                                             <constraints>
                                                 <constraint firstItem="cPm-V5-JEi" firstAttribute="top" secondItem="hkD-X4-45x" secondAttribute="top" id="Kwx-Uq-iub"/>
                                                 <constraint firstAttribute="trailing" secondItem="cPm-V5-JEi" secondAttribute="trailing" id="N4J-ya-qiP"/>
@@ -76,6 +80,9 @@
                                                 <constraint firstAttribute="bottom" secondItem="Duz-kG-JPt" secondAttribute="bottom" id="uB3-Df-EzK"/>
                                                 <constraint firstAttribute="bottom" secondItem="cPm-V5-JEi" secondAttribute="bottom" id="v1J-WN-Tua"/>
                                             </constraints>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="iUA-LF-SKw" appends="YES" id="8MV-CB-bwZ"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                     <constraints>
@@ -111,11 +118,18 @@
                     <navigationItem key="navigationItem" id="eJ1-TC-GYM"/>
                     <connections>
                         <outlet property="checkInButton" destination="D97-5i-wGg" id="Ff0-1T-YCA"/>
+                        <outlet property="currentTimeLabel" destination="288-KX-Wmc" id="YJE-FT-6tH"/>
                         <outlet property="currentTimeVisualEffectView" destination="Sv8-cw-s8Y" id="ARs-uE-V9T"/>
                         <outlet property="mealTimeBackgroundImageView" destination="mpS-Qd-Ryg" id="nAL-6J-ewg"/>
+                        <outlet property="quotesLabel" destination="HPo-ia-UyJ" id="7mX-bS-5ja"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RUT-nX-Nhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iUA-LF-SKw">
+                    <connections>
+                        <action selector="onSeeRecommendationTimeContainerViewTapped:" destination="bjB-lu-1eE" id="SPR-RB-Egt"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="15.942028985507248" y="116.51785714285714"/>
         </scene>
