@@ -14,12 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         // ini dari update haddawi
-        
+
         //tes dari Vincent
-        
-        //comment apa ya
-        
-        //Test2
+
     }
 
 
