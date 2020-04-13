@@ -11,7 +11,7 @@
         <!--Check In Dashboard View Controller-->
         <scene sceneID="mJH-6h-c2N">
             <objects>
-                <viewController id="bjB-lu-1eE" customClass="CheckInDashboardViewController" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bjB-lu-1eE" customClass="CheckInDashboardViewController" customModule="Eabit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rc4-Qe-gkK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,7 +137,7 @@
         <!--Recommendation Time Check In Dashboard View Controller-->
         <scene sceneID="Zg6-wc-5b9">
             <objects>
-                <viewController id="7tt-cV-hij" customClass="RecommendationTimeCheckInDashboardViewController" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7tt-cV-hij" customClass="RecommendationTimeCheckInDashboardViewController" customModule="Eabit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f6n-fm-IUb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,11 +178,11 @@
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etC-Oh-fC6">
                                                 <rect key="frame" x="16" y="365" width="382" height="669.5"/>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in posuere libero, sit amet dapibus urna. Curabitur pretium vulputate vulputate. Nam luctus massa leo. Aliquam quis dignissim turpis. In id massa ut augue porta elementum ac sit amet velit. 
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in posuere libero, sit amet dapibus urna. Curabitur pretium vulputate vulputate. Nam luctus massa leo. Aliquam quis dignissim turpis. In id massa ut augue porta elementum ac sit amet velit. 
 
 Donec sed neque sit amet elit tincidunt tempor. Mauris at purus ut nibh mattis pellentesque. Praesent consequat pellentesque lorem, et dapibus tortor commodo id. Ut a tortor id arcu tristique volutpat vitae iaculis turpis. Praesent a efficitur sapien. Sed metus libero, condimentum eu felis nec, bibendum eleifend nisl. Integer vel lorem suscipit metus consectetur facilisis in in sapien. Donec et eros ipsum. Fusce vitae rutrum magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in posuere libero, sit amet dapibus urna. Curabitur pretium vulputate vulputate. Nam luctus massa leo. Aliquam quis dignissim turpis. In id massa ut augue porta elementum ac sit amet velit. 
 
-Donec sed neque sit amet elit tincidunt tempor. Mauris at purus ut nibh mattis pellentesque. Praesent consequat pellentesque lorem, et dapibus tortor commodo id. Ut a tortor id arcu tristique volutpat vitae iaculis turpis. Praesent a efficitur sapien. Sed metus libero, condimentum eu felis nec, bibendum eleifend nisl. Integer vel lorem suscipit metus consectetur facilisis in in sapien. Donec et eros ipsum. Fusce vitae rutrum magna.</mutableString>
+Donec sed neque sit amet elit tincidunt tempor. Mauris at purus ut nibh mattis pellentesque. Praesent consequat pellentesque lorem, et dapibus tortor commodo id. Ut a tortor id arcu tristique volutpat vitae iaculis turpis. Praesent a efficitur sapien. Sed metus libero, condimentum eu felis nec, bibendum eleifend nisl. Integer vel lorem suscipit metus consectetur facilisis in in sapien. Donec et eros ipsum. Fusce vitae rutrum magna.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -227,6 +227,9 @@ Donec sed neque sit amet elit tincidunt tempor. Mauris at purus ut nibh mattis p
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVM-9P-oox"/>
                     </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="etC-Oh-fC6" id="OsG-0l-N4L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NA-Q0-pfy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
