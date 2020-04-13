@@ -105,14 +105,11 @@
 			path = CheckIn;
 			sourceTree = "<group>";
 		};
-		4F4A2EA8244338D6005E43EF /* Achievement */ = {
+		2A33C152243F9B26009B9E1D /* Achievement */ = {
 			isa = PBXGroup;
 			children = (
 				4F4A2EA9244338E4005E43EF /* AchievementDashboardViewController.storyboard */,
 				4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */,
-		2A33C152243F9B26009B9E1D /* Achievement */ = {
-			isa = PBXGroup;
-			children = (
 				2A33C155243F9B94009B9E1D /* AchievementVC.swift */,
 				2A33C153243F9B3E009B9E1D /* Achievement.storyboard */,
 				2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */,
