@@ -3,12 +3,13 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AchievementVC-->
+        <!--Achievement-->
         <scene sceneID="i9h-54-1yT">
             <objects>
                 <viewController id="lhe-My-tvL" customClass="AchievementVC" customModule="Eabit" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KE3-qa-Q1p">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pq9-yZ-NNk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -71,7 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ygf-o6-IKn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="LUV-z4-iiE"/>
+                    <navigationItem key="navigationItem" title="Achievement" id="LUV-z4-iiE"/>
                     <connections>
                         <outlet property="collectionView" destination="KE3-qa-Q1p" id="lBZ-mQ-Em7"/>
                         <segue destination="fn6-zR-b9S" kind="presentation" identifier="achievementDetails" id="yJ6-4V-m17"/>
@@ -160,12 +161,19 @@
         <!--Achievement-->
         <scene sceneID="lta-zw-btE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SPn-wN-Dxi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SPn-wN-Dxi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Achievement" image="rosette" catalog="system" id="qt2-P4-glN"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0tQ-tO-Fy5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0tQ-tO-Fy5">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="ColorPrimaryGreenTint"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="ColorPrimaryGreenTint"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -180,5 +188,8 @@
     <resources>
         <image name="imagePlaceholder" width="608" height="411"/>
         <image name="rosette" catalog="system" width="100" height="128"/>
+        <namedColor name="ColorPrimaryGreenTint">
+            <color red="0.027450980392156862" green="0.66274509803921566" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

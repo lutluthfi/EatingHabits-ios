@@ -17,7 +17,7 @@ struct MealTime {
 }
 
 extension MealTime {
-    enum Category: String {
+    enum Category: String, CaseIterable {
         case breakfast = "breakfast"
         case lunch = "lunch"
         case dinner = "dinner"

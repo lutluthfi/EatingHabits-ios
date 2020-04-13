@@ -29,6 +29,7 @@
 		4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */; };
+		4FA6203524446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6203424446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -59,7 +60,8 @@
 		4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
-		4FFB10A5243576BD0010838A /* Eabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FA6203424446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardViewController.swift; sourceTree = "<group>"; };
+		4FFB10A5243576BD0010838A /* Eabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FFB10B4243576C00010838A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				4F4A2EC724437341005E43EF /* TableCell */,
 				4F4A2EAD24433909005E43EF /* SummaryDashboardViewController.storyboard */,
 				4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */,
+				4FA6203424446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift */,
 			);
 			path = Summary;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 		4FFB10A6243576BD0010838A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FFB10A5243576BD0010838A /* Eabit.app */,
+				4FFB10A5243576BD0010838A /* Eabits.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -259,7 +262,7 @@
 			);
 			name = EatingHabits;
 			productName = EatingHabits;
-			productReference = 4FFB10A5243576BD0010838A /* Eabit.app */;
+			productReference = 4FFB10A5243576BD0010838A /* Eabits.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -326,6 +329,7 @@
 				4F4A2EBF2443669B005E43EF /* CoreDataStorage.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				4F4A2EC62443675E005E43EF /* MealTime.swift in Sources */,
+				4FA6203524446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
 				4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
@@ -483,8 +487,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabit;
-				PRODUCT_NAME = Eabit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabits;
+				PRODUCT_NAME = Eabits;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -502,8 +506,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabit;
-				PRODUCT_NAME = Eabit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabits;
+				PRODUCT_NAME = Eabits;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -10,7 +10,7 @@ import UIKit
 
 class ReadingsSummaryDashboardTableViewCell: UITableViewCell {
     static let identifier = String(describing: ReadingsSummaryDashboardTableViewCell.self)
-    static let height = CGFloat(268)
+    static let height = CGFloat(252)
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var contentContainerView: UIView!

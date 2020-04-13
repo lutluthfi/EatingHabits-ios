@@ -22,17 +22,21 @@ class RecommendationTimeCheckInDashboardViewController: UIViewController {
     }
     
     private func setupViewDidLoad() {
-        let breakfastContent = "BREAKFAST\n\u{2022} Eat within 30 minutes of waking up\n\u{2022} Ideal time to have breakfast is 7 AM\n\u{2022} Do not delay breakfast later than 10 AM\n\u{2022} Make sure you have protein in your breakfast\n\n"
-        let breakfastContentAttributedString = NSMutableAttributedString(string: breakfastContent)
-        breakfastContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(0..<9))
+        let paragraph = NSMutableParagraphStyle()
+        paragraph.firstLineHeadIndent = .zero
+        paragraph.headIndent = 12
+        
+        let breakfastContent = "BREAKFAST\n\u{2022} Have your breakfast within 30 minutes after you wake up\n\u{2022} Ideal time to have breakfast is 7 AM\n\u{2022} Do not delay breakfast later than 10 AM\n\u{2022} Make sure you have protein in your breakfast\n\n"
+        let breakfastContentAttributedString = NSMutableAttributedString(string: breakfastContent, attributes: [ NSAttributedString.Key.paragraphStyle : paragraph ])
+        breakfastContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(.zero..<9))
         
         let lunchContent = "LUNCH\n\u{2022} Ideal time to have lunch is 12.45pm\n\u{2022} Try and keep a gap of 4 hours between your breakfast and lunch\n\u{2022} Do not delay lunch later than 4 PM\n\n"
-        let lunchContentAttributedString = NSMutableAttributedString(string: lunchContent)
-        lunchContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(0..<5))
+        let lunchContentAttributedString = NSMutableAttributedString(string: lunchContent, attributes: [ NSAttributedString.Key.paragraphStyle : paragraph ])
+        lunchContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(.zero..<5))
         
         let dinnerContent = "DINNER\n\u{2022} The ideal time to have dinner is before 7 PM\n\u{2022} You should keep a gap of 3 hours between your dinner and bedtime\n\u{2022} Do not delay dinner later than 10 PM\n\u{2022} Eating close to bedtime can interfere with the quality of sleep"
-        let dinnerContentAttributedString = NSMutableAttributedString(string: dinnerContent)
-        dinnerContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(0..<6))
+        let dinnerContentAttributedString = NSMutableAttributedString(string: dinnerContent, attributes: [ NSAttributedString.Key.paragraphStyle : paragraph ])
+        dinnerContentAttributedString.setAttributes([ NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .semibold) ], range: .init(.zero..<6))
         
         let contentAttributedString = NSMutableAttributedString()
         contentAttributedString.append(breakfastContentAttributedString)

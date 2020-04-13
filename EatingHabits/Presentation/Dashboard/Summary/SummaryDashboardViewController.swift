@@ -39,7 +39,7 @@ extension SummaryDashboardViewController {
         case Constant.headerSection:
             return 1
         case Constant.mealTimeCategorySection:
-            return 3
+            return MealTime.Category.allCases.count - 1
         case Constant.readingsSection:
             return 1
         default:
@@ -75,6 +75,9 @@ extension SummaryDashboardViewController {
                 fatalError("Cannot dequeue reusable cell \(MealTimeSummaryDashboardTableViewCell.identifier) with reuseIdentifier: \(MealTimeSummaryDashboardTableViewCell.identifier)")
             }
             
+            let category = MealTime.Category.allCases[indexPath.row]
+            cell.fill(category: category)
+            
             return cell
         case Constant.readingsSection:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: ReadingsSummaryDashboardTableViewCell.identifier, for: indexPath) as? ReadingsSummaryDashboardTableViewCell else {
@@ -84,6 +87,29 @@ extension SummaryDashboardViewController {
             return cell
         default:
             return UITableViewCell()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.section == Constant.readingsSection {
+//            Animation 1
+//            let transformTranslate = CATransform3DTranslate(CATransform3DIdentity, -self.view.bounds.width / 2, .zero, .zero)
+//            cell.layer.transform = transformTranslate
+//            cell.alpha = 0.5
+//
+//            UIView.animate(withDuration: 0.75) {
+//                cell.layer.transform = CATransform3DIdentity
+//                cell.alpha = 1
+//            }
+            
+            let transformTranslate = CATransform3DTranslate(CATransform3DIdentity, .zero, 64, .zero)
+            cell.layer.transform = transformTranslate
+            cell.alpha = 0
+            
+            UIView.animate(withDuration: 0.5) {
+                cell.layer.transform = CATransform3DIdentity
+                cell.alpha = 1
+            }
         }
     }
     
