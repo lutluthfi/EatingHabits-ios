@@ -35,7 +35,6 @@
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
 					<string>DashboardViewController</string>
-					<string>Achievement</string>
 				</dict>
 			</array>
 		</dict>
@@ -44,7 +43,6 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>DashboardViewController</string>
-	<string>Achievement</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

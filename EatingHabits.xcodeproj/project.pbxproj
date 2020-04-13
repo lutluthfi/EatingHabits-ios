@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1077362440553900994C8F /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077352440553900994C8F /* AchievementCell.swift */; };
+		2A10773824414E8000994C8F /* AchievementSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773724414E8000994C8F /* AchievementSection.swift */; };
+		2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077392441570D00994C8F /* SectionHeader.swift */; };
+		2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */; };
+		2A10773E2441DBB200994C8F /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773D2441DBB200994C8F /* RadialGradientView.swift */; };
+		2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* Achievement.storyboard */; };
+		2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C155243F9B94009B9E1D /* AchievementVC.swift */; };
 		4F4A2EA2244333D0005E43EF /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */; };
 		4F4A2EA524433703005E43EF /* CheckInDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */; };
 		4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */; };
@@ -24,13 +31,6 @@
 		4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */; };
-		2A1077362440553900994C8F /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077352440553900994C8F /* AchievementCell.swift */; };
-		2A10773824414E8000994C8F /* AchievementSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773724414E8000994C8F /* AchievementSection.swift */; };
-		2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077392441570D00994C8F /* SectionHeader.swift */; };
-		2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */; };
-		2A10773E2441DBB200994C8F /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773D2441DBB200994C8F /* RadialGradientView.swift */; };
-		2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* Achievement.storyboard */; };
-		2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C155243F9B94009B9E1D /* AchievementVC.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -39,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A1077352440553900994C8F /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		2A10773724414E8000994C8F /* AchievementSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSection.swift; sourceTree = "<group>"; };
+		2A1077392441570D00994C8F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailsVC.swift; sourceTree = "<group>"; };
+		2A10773D2441DBB200994C8F /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		2A33C153243F9B3E009B9E1D /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		2A33C155243F9B94009B9E1D /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 		4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckInDashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInDashboardViewController.swift; sourceTree = "<group>"; };
@@ -56,14 +63,7 @@
 		4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
-		2A1077352440553900994C8F /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
-		2A10773724414E8000994C8F /* AchievementSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSection.swift; sourceTree = "<group>"; };
-		2A1077392441570D00994C8F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
-		2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailsVC.swift; sourceTree = "<group>"; };
-		2A10773D2441DBB200994C8F /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
-		2A33C153243F9B3E009B9E1D /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
-		2A33C155243F9B94009B9E1D /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
-		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFB10A5243576BD0010838A /* Eabit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eabit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4FFB10B4243576C00010838A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,28 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F4A2EA024433304005E43EF /* Dashboard */ = {
-			isa = PBXGroup;
-			children = (
-				4F4A2EAC244338FA005E43EF /* History */,
-				4F4A2EAB244338EF005E43EF /* Summary */,
-				4F4A2EA8244338D6005E43EF /* Achievement */,
-				4F4A2EA3244336F4005E43EF /* CheckIn */,
-				4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */,
-			);
-			path = Dashboard;
-			sourceTree = "<group>";
-		};
-		4F4A2EA3244336F4005E43EF /* CheckIn */ = {
-			isa = PBXGroup;
-			children = (
-				4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */,
-				4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */,
-				4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */,
-			);
-			path = CheckIn;
-			sourceTree = "<group>";
-		};
 		2A33C152243F9B26009B9E1D /* Achievement */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +97,27 @@
 				2A10773D2441DBB200994C8F /* RadialGradientView.swift */,
 			);
 			path = Achievement;
+			sourceTree = "<group>";
+		};
+		4F4A2EA024433304005E43EF /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A2EAC244338FA005E43EF /* History */,
+				4F4A2EAB244338EF005E43EF /* Summary */,
+				4F4A2EA3244336F4005E43EF /* CheckIn */,
+				4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4F4A2EA3244336F4005E43EF /* CheckIn */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */,
+				4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */,
+				4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */,
+			);
+			path = CheckIn;
 			sourceTree = "<group>";
 		};
 		4F4A2EAB244338EF005E43EF /* Summary */ = {
@@ -177,7 +176,7 @@
 		4FFB10A6243576BD0010838A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FFB10A5243576BD0010838A /* EatingHabits.app */,
+				4FFB10A5243576BD0010838A /* Eabit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,8 +216,6 @@
 			children = (
 				4F4A2EA024433304005E43EF /* Dashboard */,
 				2A33C152243F9B26009B9E1D /* Achievement */,
-				4FFB10AC243576BD0010838A /* ViewController.swift */,
-				4FFB10AE243576BD0010838A /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -268,7 +265,7 @@
 			);
 			name = EatingHabits;
 			productName = EatingHabits;
-			productReference = 4FFB10A5243576BD0010838A /* EatingHabits.app */;
+			productReference = 4FFB10A5243576BD0010838A /* Eabit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -317,7 +314,6 @@
 				4F4A2EA524433703005E43EF /* CheckInDashboardViewController.storyboard in Resources */,
 				4F4A2EAE24433909005E43EF /* SummaryDashboardViewController.storyboard in Resources */,
 				2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */,
-				4FFB10B0243576BD0010838A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +339,6 @@
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 				4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */,
 				4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */,
-				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
 				2A1077362440553900994C8F /* AchievementCell.swift in Sources */,
 				2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
@@ -496,8 +491,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.EatingHabits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabit;
+				PRODUCT_NAME = Eabit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,8 +510,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.EatingHabits;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.triplet.Eabit;
+				PRODUCT_NAME = Eabit;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
