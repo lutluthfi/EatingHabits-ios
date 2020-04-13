@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zig-JL-1bb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SPn-wN-Dxi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -11,14 +11,13 @@
         <!--AchievementVC-->
         <scene sceneID="i9h-54-1yT">
             <objects>
-                <viewController id="lhe-My-tvL" customClass="AchievementVC" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lhe-My-tvL" customClass="AchievementVC" customModule="Eabit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fDF-w0-Mv0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KE3-qa-Q1p">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KE3-qa-Q1p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pq9-yZ-NNk">
                                     <size key="itemSize" width="128" height="128"/>
@@ -27,7 +26,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievementCell" id="Qve-Md-sdi" customClass="AchievementCell" customModule="EatingHabits" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievementCell" id="Qve-Md-sdi" customClass="AchievementCell" customModule="Eabit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="lfz-xg-xqF">
@@ -45,7 +44,7 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="achievementSection" id="4FH-tU-YmF" customClass="AchievementSection" customModule="EatingHabits" customModuleProvider="target">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="achievementSection" id="4FH-tU-YmF" customClass="AchievementSection" customModule="Eabit" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -64,6 +63,12 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KE3-qa-Q1p" firstAttribute="bottom" secondItem="fDF-w0-Mv0" secondAttribute="bottom" id="4t6-F6-Sep"/>
+                            <constraint firstItem="KE3-qa-Q1p" firstAttribute="trailing" secondItem="fDF-w0-Mv0" secondAttribute="trailing" id="9rz-F8-x8d"/>
+                            <constraint firstItem="KE3-qa-Q1p" firstAttribute="leading" secondItem="fDF-w0-Mv0" secondAttribute="leading" id="Mce-Ng-2QZ"/>
+                            <constraint firstItem="KE3-qa-Q1p" firstAttribute="top" secondItem="Ygf-o6-IKn" secondAttribute="top" id="dac-PB-zjZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ygf-o6-IKn"/>
                     </view>
                     <navigationItem key="navigationItem" id="LUV-z4-iiE"/>
@@ -79,12 +84,12 @@
         <!--Achievement DetailsVC-->
         <scene sceneID="6vR-OD-Aql">
             <objects>
-                <viewController id="fn6-zR-b9S" customClass="AchievementDetailsVC" customModule="EatingHabits" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fn6-zR-b9S" customClass="AchievementDetailsVC" customModule="Eabit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5e-BY-7RB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-h2-N5h" customClass="RadialGradientView" customModule="EatingHabits" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-h2-N5h" customClass="RadialGradientView" customModule="Eabit" customModuleProvider="target">
                                 <rect key="frame" x="-190" y="-349" width="795" height="1434"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -152,31 +157,14 @@
             </objects>
             <point key="canvasLocation" x="1611.5942028985507" y="-400.44642857142856"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="1GJ-CY-zEr">
-            <objects>
-                <tabBarController id="zig-JL-1bb" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v1J-Xj-ofD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="SPn-wN-Dxi" kind="relationship" relationship="viewControllers" id="Zez-hv-2mq"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e5n-hD-Kyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1135" y="-400"/>
-        </scene>
         <!--Achievement-->
         <scene sceneID="lta-zw-btE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SPn-wN-Dxi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Achievement" image="rosette" catalog="system" id="bCA-Ft-9Ys"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SPn-wN-Dxi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Achievement" image="rosette" catalog="system" id="qt2-P4-glN"/>
                     <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0tQ-tO-Fy5">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

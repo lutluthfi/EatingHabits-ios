@@ -12,17 +12,15 @@
 		2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077392441570D00994C8F /* SectionHeader.swift */; };
 		2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */; };
 		2A10773E2441DBB200994C8F /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773D2441DBB200994C8F /* RadialGradientView.swift */; };
-		2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* Achievement.storyboard */; };
+		2A33C154243F9B3E009B9E1D /* AchievementDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* AchievementDashboardViewController.storyboard */; };
 		2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C155243F9B94009B9E1D /* AchievementVC.swift */; };
 		4F4A2EA2244333D0005E43EF /* DashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */; };
 		4F4A2EA524433703005E43EF /* CheckInDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */; };
 		4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */; };
-		4F4A2EAA244338E4005E43EF /* AchievementDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EA9244338E4005E43EF /* AchievementDashboardViewController.storyboard */; };
 		4F4A2EAE24433909005E43EF /* SummaryDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EAD24433909005E43EF /* SummaryDashboardViewController.storyboard */; };
 		4F4A2EB024433918005E43EF /* HistoryDashboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F4A2EAF24433918005E43EF /* HistoryDashboardViewController.storyboard */; };
 		4F4A2EB224433932005E43EF /* HistoryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB124433932005E43EF /* HistoryDashboardViewController.swift */; };
 		4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */; };
-		4F4A2EB6244339C8005E43EF /* AchievementDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */; };
 		4F4A2EB924434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */; };
 		4F4A2EBF2443669B005E43EF /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EBE2443669B005E43EF /* CoreDataStorage.swift */; };
 		4F4A2EC1244366FB005E43EF /* MealTimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */; };
@@ -44,17 +42,15 @@
 		2A1077392441570D00994C8F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailsVC.swift; sourceTree = "<group>"; };
 		2A10773D2441DBB200994C8F /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
-		2A33C153243F9B3E009B9E1D /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		2A33C153243F9B3E009B9E1D /* AchievementDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AchievementDashboardViewController.storyboard; sourceTree = "<group>"; };
 		2A33C155243F9B94009B9E1D /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 		4F4A2EA1244333D0005E43EF /* DashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CheckInDashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInDashboardViewController.swift; sourceTree = "<group>"; };
-		4F4A2EA9244338E4005E43EF /* AchievementDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AchievementDashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EAD24433909005E43EF /* SummaryDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SummaryDashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EAF24433918005E43EF /* HistoryDashboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HistoryDashboardViewController.storyboard; sourceTree = "<group>"; };
 		4F4A2EB124433932005E43EF /* HistoryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDashboardViewController.swift; sourceTree = "<group>"; };
 		4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDashboardViewController.swift; sourceTree = "<group>"; };
-		4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDashboardViewController.swift; sourceTree = "<group>"; };
 		4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationTimeCheckInDashboardViewController.swift; sourceTree = "<group>"; };
 		4F4A2EBE2443669B005E43EF /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
 		4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeStorage.swift; sourceTree = "<group>"; };
@@ -86,10 +82,8 @@
 		2A33C152243F9B26009B9E1D /* Achievement */ = {
 			isa = PBXGroup;
 			children = (
-				4F4A2EA9244338E4005E43EF /* AchievementDashboardViewController.storyboard */,
-				4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */,
 				2A33C155243F9B94009B9E1D /* AchievementVC.swift */,
-				2A33C153243F9B3E009B9E1D /* Achievement.storyboard */,
+				2A33C153243F9B3E009B9E1D /* AchievementDashboardViewController.storyboard */,
 				2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */,
 				2A10773724414E8000994C8F /* AchievementSection.swift */,
 				2A1077352440553900994C8F /* AchievementCell.swift */,
@@ -310,10 +304,9 @@
 				4FFB10B8243576C00010838A /* LaunchScreen.storyboard in Resources */,
 				4FFB10B5243576C00010838A /* Assets.xcassets in Resources */,
 				4F4A2EB024433918005E43EF /* HistoryDashboardViewController.storyboard in Resources */,
-				4F4A2EAA244338E4005E43EF /* AchievementDashboardViewController.storyboard in Resources */,
 				4F4A2EA524433703005E43EF /* CheckInDashboardViewController.storyboard in Resources */,
 				4F4A2EAE24433909005E43EF /* SummaryDashboardViewController.storyboard in Resources */,
-				2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */,
+				2A33C154243F9B3E009B9E1D /* AchievementDashboardViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +317,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F4A2EB6244339C8005E43EF /* AchievementDashboardViewController.swift in Sources */,
 				4F4A2EB924434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift in Sources */,
 				4F4A2EC424436754005E43EF /* MealTimeEntity+Mapping.swift in Sources */,
 				4F4A2EB224433932005E43EF /* HistoryDashboardViewController.swift in Sources */,
