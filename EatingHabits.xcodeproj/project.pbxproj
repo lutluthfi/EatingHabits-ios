@@ -21,6 +21,9 @@
 		4F4A2EC1244366FB005E43EF /* MealTimeStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */; };
 		4F4A2EC424436754005E43EF /* MealTimeEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */; };
 		4F4A2EC62443675E005E43EF /* MealTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC52443675E005E43EF /* MealTime.swift */; };
+		4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */; };
+		4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */; };
+		4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -43,6 +46,9 @@
 		4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeStorage.swift; sourceTree = "<group>"; };
 		4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MealTimeEntity+Mapping.swift"; sourceTree = "<group>"; };
 		4F4A2EC52443675E005E43EF /* MealTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTime.swift; sourceTree = "<group>"; };
+		4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
+		4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
+		4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 		4F4A2EAB244338EF005E43EF /* Summary */ = {
 			isa = PBXGroup;
 			children = (
+				4F4A2EC724437341005E43EF /* TableCell */,
 				4F4A2EAD24433909005E43EF /* SummaryDashboardViewController.storyboard */,
 				4F4A2EB324433984005E43EF /* SummaryDashboardViewController.swift */,
 			);
@@ -126,6 +133,16 @@
 				4F4A2EC324436754005E43EF /* MealTimeEntity+Mapping.swift */,
 			);
 			path = "DAO+Mapping";
+			sourceTree = "<group>";
+		};
+		4F4A2EC724437341005E43EF /* TableCell */ = {
+			isa = PBXGroup;
+			children = (
+				4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */,
+				4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */,
+				4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */,
+			);
+			path = TableCell;
 			sourceTree = "<group>";
 		};
 		4FFB109C243576BD0010838A = {
@@ -289,11 +306,14 @@
 				4F4A2EB924434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift in Sources */,
 				4F4A2EC424436754005E43EF /* MealTimeEntity+Mapping.swift in Sources */,
 				4F4A2EB224433932005E43EF /* HistoryDashboardViewController.swift in Sources */,
+				4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */,
+				4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */,
 				4F4A2EC1244366FB005E43EF /* MealTimeStorage.swift in Sources */,
 				4F4A2EBF2443669B005E43EF /* CoreDataStorage.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				4F4A2EC62443675E005E43EF /* MealTime.swift in Sources */,
 				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
+				4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */,
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 				4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */,
 				4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */,

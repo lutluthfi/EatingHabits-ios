@@ -17,10 +17,13 @@ class SummaryDashboardViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupViewDidLoad()
     }
     
     private func setupViewDidLoad() {
-        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.reloadData()
     }
     
 }
@@ -34,35 +37,54 @@ extension SummaryDashboardViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case Constant.headerSection:
-            break
+            return 1
         case Constant.mealTimeCategorySection:
-            break
+            return 3
         case Constant.readingsSection:
-            break
+            return 1
         default:
             return .zero
         }
-        
-        return .zero
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return .zero
+        switch indexPath.section {
+        case Constant.headerSection:
+            return HeaderSummaryDashboardTableViewCell.height
+        case Constant.mealTimeCategorySection:
+            return MealTimeSummaryDashboardTableViewCell.height
+        case Constant.readingsSection:
+            return ReadingsSummaryDashboardTableViewCell.height
+        default:
+            return .zero
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section {
-            case Constant.headerSection:
-                break
-            case Constant.mealTimeCategorySection:
-                break
-            case Constant.readingsSection:
-                break
-            default:
-                return UITableViewCell()
+        case Constant.headerSection:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: HeaderSummaryDashboardTableViewCell.identifier, for: indexPath) as? HeaderSummaryDashboardTableViewCell else {
+                fatalError("Cannot dequeue reusable cell \(HeaderSummaryDashboardTableViewCell.identifier) with reuseIdentifier: \(HeaderSummaryDashboardTableViewCell.identifier)")
+            }
+            
+            cell.fill()
+            
+            return cell
+        case Constant.mealTimeCategorySection:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: MealTimeSummaryDashboardTableViewCell.identifier, for: indexPath) as? MealTimeSummaryDashboardTableViewCell else {
+                fatalError("Cannot dequeue reusable cell \(MealTimeSummaryDashboardTableViewCell.identifier) with reuseIdentifier: \(MealTimeSummaryDashboardTableViewCell.identifier)")
+            }
+            
+            return cell
+        case Constant.readingsSection:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: ReadingsSummaryDashboardTableViewCell.identifier, for: indexPath) as? ReadingsSummaryDashboardTableViewCell else {
+                fatalError("Cannot dequeue reusable cell \(ReadingsSummaryDashboardTableViewCell.identifier) with reuseIdentifier: \(ReadingsSummaryDashboardTableViewCell.identifier)")
+            }
+            
+            return cell
+        default:
+            return UITableViewCell()
         }
-        
-        return UITableViewCell()
     }
     
 }
