@@ -9,6 +9,7 @@
 import Foundation
 
 protocol MealTimeStorage {
-    func fetchByCategory(cycleId: UUID, category: MealTime.Category, completion: @escaping (Result<[MealTime], Error>) -> Void)
+    func mealTimes(completion: @escaping (Result<[MealTime], Error>) -> Void)
+    func mealTimesByCategory(cycleId: UUID, category: MealTime.Category, completion: @escaping (Result<[MealTime], Error>) -> Void)
     func storeMealTime(mealTime: MealTime, completion: @escaping (Result<MealTime, Error>) -> Void)
 }

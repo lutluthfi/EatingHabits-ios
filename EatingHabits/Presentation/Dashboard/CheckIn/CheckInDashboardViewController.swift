@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CheckInDashboardViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class CheckInDashboardViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, CaptureCheckInDashboardViewControllerDelegate {
 
     @IBOutlet weak var checkInButton: UIButton!
     @IBOutlet weak var currentTimeLabel: UILabel!
@@ -35,9 +35,16 @@ class CheckInDashboardViewController: UIViewController, UINavigationControllerDe
     private let backgroundImages: [UIImage] = [ #imageLiteral(resourceName: "ImageCheckInBackgroundLunch") , #imageLiteral(resourceName: "ImageCheckInBackgroundBreakfast") ]
     private var timer: Timer?
     
+    private var currentMealTimeDate: Date?
+    private var currentMealTimeCategory: MealTime.Category?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupViewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         self.startTimerScheduler()
     }
     
@@ -48,8 +55,9 @@ class CheckInDashboardViewController: UIViewController, UINavigationControllerDe
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationViewController = segue.destination as? CaptureCheckInDashboardViewController {
-            if let capturedImage = sender as? UIImage {
-                destinationViewController.capturedImage = capturedImage
+            if let requestValue = sender as? CaptureCheckInDashboardViewControllerRequestValue {
+                destinationViewController.delegate = self
+                destinationViewController.requestValue = requestValue
             }
         }
     }
@@ -66,11 +74,22 @@ class CheckInDashboardViewController: UIViewController, UINavigationControllerDe
         self.currentTimeVisualEffectView.layer.cornerRadius = 16
     }
     
-    private func showSuccessCheckIn() {
-        let okayAlertAction = UIAlertAction(title: "OK", style: .default) { (_) in }
-        let alertViewController = UIAlertController(title: "Success", message: "Don't forget to catch your next meal", preferredStyle: .alert)
-        alertViewController.addAction(okayAlertAction)
-        self.present(alertViewController, animated: true) { }
+    private func showAlertCheckInDidFailure() {
+        DispatchQueue.main.async {
+            let dismissAlertAction = UIAlertAction(title: "Dismiss", style: .default) { (_) in }
+            let alertViewController = UIAlertController(title: "Failure", message: "Failed to check in your current meal time. Try again!", preferredStyle: .alert)
+            alertViewController.addAction(dismissAlertAction)
+            self.present(alertViewController, animated: true) { }
+        }
+    }
+    
+    private func showAlertCheckInDidSuccess() {
+        DispatchQueue.main.async {
+            let okayAlertAction = UIAlertAction(title: "OK", style: .default) { (_) in }
+            let alertViewController = UIAlertController(title: "Success", message: "Don't forget to catch your next meal", preferredStyle: .alert)
+            alertViewController.addAction(okayAlertAction)
+            self.present(alertViewController, animated: true) { }
+        }
     }
     
     private func startTimerScheduler() {
@@ -84,17 +103,31 @@ class CheckInDashboardViewController: UIViewController, UINavigationControllerDe
         self.quotesLabel.isHidden = false
         self.loadingIndicatorView.stopAnimating()
         
-        self.currentTimeLabel.text = self.dateFormatter.string(from: Date())
+        let now = Date()
+        self.currentMealTimeDate = now
+        self.currentTimeLabel.text = self.dateFormatter.string(from: now)
         
+        // We have to convert this back to get rid of the Date "dd/MM/yyyy"
         let currentTime = self.dateFormatter.date(from: self.currentTimeLabel.text!)!
         
         if currentTime > MealTime.Constant.breakfastStartTime && currentTime < MealTime.Constant.breakfastEndTime {
+            self.currentMealTimeCategory = .breakfast
+            self.checkInButton.isEnabled = true
+            self.checkInButton.backgroundColor = #colorLiteral(red: 0, green: 0.6831147075, blue: 0, alpha: 1)
             self.quotesLabel.text = "Breakfast could be your energy to start your daily activity"
         } else if currentTime > MealTime.Constant.lunchStartTime && currentTime < MealTime.Constant.lunchEndTime {
+            self.currentMealTimeCategory = .lunch
+            self.checkInButton.isEnabled = true
+            self.checkInButton.backgroundColor = #colorLiteral(red: 0, green: 0.6831147075, blue: 0, alpha: 1)
             self.quotesLabel.text = "Go for your lunch"
         } else if currentTime > MealTime.Constant.dinnerStartTime && currentTime < MealTime.Constant.dinnerEndTime {
+            self.currentMealTimeCategory = .dinner
+            self.checkInButton.isEnabled = true
+            self.checkInButton.backgroundColor = #colorLiteral(red: 0, green: 0.6831147075, blue: 0, alpha: 1)
             self.quotesLabel.text = "Have dinner before you sleep"
         } else {
+            self.checkInButton.isEnabled = false
+            self.checkInButton.backgroundColor = .lightGray
             self.quotesLabel.text = "Keep consistent is the key"
         }
         
@@ -106,11 +139,21 @@ class CheckInDashboardViewController: UIViewController, UINavigationControllerDe
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true) { }
-        guard let capturedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
-        self.performSegue(withIdentifier: "CapturedCheckInDashboardViewController", sender: capturedImage)
-//        imageView.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-
+        guard let unwrappedCapturedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage, let unwrappedMealTimeCategory = self.currentMealTimeCategory, let unwrappedCurrentMealTimeDate = self.currentMealTimeDate else { return }
+//        guard let unwrappedCapturedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else { return }
+        let requestValue = CaptureCheckInDashboardViewControllerRequestValue(capturedImage: unwrappedCapturedImage, category: unwrappedMealTimeCategory, checkInDateTime: unwrappedCurrentMealTimeDate)
+//        let requestValue = CaptureCheckInDashboardViewControllerRequestValue(capturedImage: unwrappedCapturedImage, category: .breakfast, checkInDateTime: Date())
+        self.performSegue(withIdentifier: "CapturedCheckInDashboardViewController", sender: requestValue)
+    }
+ 
+    func captureCheckInDashboardDidFailure(_ viewController: UIViewController) {
+        viewController.dismiss(animated: true) { }
+        self.showAlertCheckInDidFailure()
     }
     
+    func captureCheckInDashboardDidSuccess(_ viewController: UIViewController) {
+        viewController.dismiss(animated: true) { }
+        self.showAlertCheckInDidSuccess()
+    }
 }
 

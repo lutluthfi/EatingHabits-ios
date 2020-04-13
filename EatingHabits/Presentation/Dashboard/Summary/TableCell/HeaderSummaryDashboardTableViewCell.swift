@@ -10,7 +10,7 @@ import UIKit
 
 class HeaderSummaryDashboardTableViewCell: UITableViewCell {
     static let identifier = String(describing: HeaderSummaryDashboardTableViewCell.self)
-    static let height = CGFloat(120)
+    static let height = CGFloat(136)
     
     @IBOutlet weak var trackedDaysContainerView: UIVisualEffectView!
     @IBOutlet weak var trackedDaysCounterLabel: UILabel!

@@ -21,7 +21,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D97-5i-wGg">
                                 <rect key="frame" x="16" y="747" width="382" height="50"/>
-                                <color key="backgroundColor" name="ColorPrimaryGreenTint"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="UPN-qh-chr"/>
                                 </constraints>
@@ -52,7 +52,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fVE-yR-DOG">
-                                            <rect key="frame" x="172.5" y="76.5" width="37" height="37"/>
+                                            <rect key="frame" x="172.5" y="26" width="37" height="37"/>
                                             <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </activityIndicatorView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-X4-45x">
@@ -99,7 +99,7 @@
                                         <constraint firstItem="hkD-X4-45x" firstAttribute="top" secondItem="HPo-ia-UyJ" secondAttribute="bottom" constant="16" id="TM4-bl-yRi"/>
                                         <constraint firstItem="288-KX-Wmc" firstAttribute="top" secondItem="9LO-tC-eWa" secondAttribute="top" constant="24" id="Uap-bT-1hF"/>
                                         <constraint firstAttribute="trailing" secondItem="HPo-ia-UyJ" secondAttribute="trailing" constant="16" id="Vnh-pc-NkZ"/>
-                                        <constraint firstItem="fVE-yR-DOG" firstAttribute="centerY" secondItem="9LO-tC-eWa" secondAttribute="centerY" id="rUb-gS-zyX"/>
+                                        <constraint firstItem="fVE-yR-DOG" firstAttribute="centerY" secondItem="288-KX-Wmc" secondAttribute="centerY" id="sYd-QR-PCB"/>
                                         <constraint firstItem="HPo-ia-UyJ" firstAttribute="leading" secondItem="9LO-tC-eWa" secondAttribute="leading" constant="16" id="t5E-Rd-DqT"/>
                                     </constraints>
                                 </view>

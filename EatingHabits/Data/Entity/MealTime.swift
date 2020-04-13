@@ -11,7 +11,6 @@ import Foundation
 struct MealTime {
     let category: Category?
     let checkInDateTime: Date?
-    let cycleId: UUID?
     let id: UUID?
     let imageEncodedString: String?
 }
@@ -29,7 +28,6 @@ extension MealTime {
     init(entity: MealTimeEntity) {
         self.category = entity.category?.toMealTimeCategory()
         self.checkInDateTime = entity.checkInDateTime
-        self.cycleId = entity.cycleId
         self.id = entity.id
         self.imageEncodedString = entity.imageEncodedString
     }

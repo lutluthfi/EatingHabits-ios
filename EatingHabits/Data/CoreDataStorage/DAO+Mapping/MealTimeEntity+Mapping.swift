@@ -15,7 +15,6 @@ extension MealTimeEntity {
         self.init(context: context)
         self.category = entity.category?.rawValue
         self.checkInDateTime = entity.checkInDateTime
-        self.cycleId = entity.cycleId
         self.id = entity.id
         self.imageEncodedString = entity.imageEncodedString
     }

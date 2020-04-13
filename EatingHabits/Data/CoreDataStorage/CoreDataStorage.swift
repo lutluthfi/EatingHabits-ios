@@ -45,7 +45,25 @@ class CoreDataStorage {
 
 // MARK: - MealTimeStorage
 extension CoreDataStorage: MealTimeStorage {
-    func fetchByCategory(cycleId: UUID, category: MealTime.Category, completion: @escaping (Result<[MealTime], Error>) -> Void) {
+    
+    func mealTimes(completion: @escaping (Result<[MealTime], Error>) -> Void) {
+        self.persistentContainer.performBackgroundTask { (context) in
+            do {
+                let request: NSFetchRequest<MealTimeEntity> = MealTimeEntity.fetchRequest()
+                let result = try context.fetch(request).map { MealTime(entity: $0) }
+                DispatchQueue.global(qos: .background).async {
+                    completion(.success(result))
+                }
+            } catch {
+                print(error)
+                DispatchQueue.global(qos: .background).async {
+                    completion(.failure(CoreDataStorageError.readError(error)))
+                }
+            }
+        }
+    }
+    
+    func mealTimesByCategory(cycleId: UUID, category: MealTime.Category, completion: @escaping (Result<[MealTime], Error>) -> Void) {
         self.persistentContainer.performBackgroundTask { (context) in
             do {
                 let request: NSFetchRequest<MealTimeEntity> = MealTimeEntity.fetchRequest()
@@ -58,10 +76,10 @@ extension CoreDataStorage: MealTimeStorage {
                     completion(.success(result))
                 }
             } catch {
+                print(error)
                 DispatchQueue.global(qos: .background).async {
                     completion(.failure(CoreDataStorageError.readError(error)))
                 }
-                print(error)
             }
         }
     }
@@ -75,6 +93,7 @@ extension CoreDataStorage: MealTimeStorage {
                     completion(.success(.init(entity: entity)))
                 }
             } catch {
+                print(error)
                 DispatchQueue.global(qos: .background).async {
                     completion(.failure(CoreDataStorageError.writeError(error)))
                 }
