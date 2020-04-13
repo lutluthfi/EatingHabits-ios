@@ -24,6 +24,13 @@
 		4F4A2EC92443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */; };
+		2A1077362440553900994C8F /* AchievementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077352440553900994C8F /* AchievementCell.swift */; };
+		2A10773824414E8000994C8F /* AchievementSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773724414E8000994C8F /* AchievementSection.swift */; };
+		2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1077392441570D00994C8F /* SectionHeader.swift */; };
+		2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */; };
+		2A10773E2441DBB200994C8F /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A10773D2441DBB200994C8F /* RadialGradientView.swift */; };
+		2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A33C153243F9B3E009B9E1D /* Achievement.storyboard */; };
+		2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33C155243F9B94009B9E1D /* AchievementVC.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -49,6 +56,13 @@
 		4F4A2EC82443735E005E43EF /* MealTimeSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTimeSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
+		2A1077352440553900994C8F /* AchievementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCell.swift; sourceTree = "<group>"; };
+		2A10773724414E8000994C8F /* AchievementSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSection.swift; sourceTree = "<group>"; };
+		2A1077392441570D00994C8F /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementDetailsVC.swift; sourceTree = "<group>"; };
+		2A10773D2441DBB200994C8F /* RadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		2A33C153243F9B3E009B9E1D /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		2A33C155243F9B94009B9E1D /* AchievementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementVC.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* EatingHabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EatingHabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +110,16 @@
 			children = (
 				4F4A2EA9244338E4005E43EF /* AchievementDashboardViewController.storyboard */,
 				4F4A2EB5244339C8005E43EF /* AchievementDashboardViewController.swift */,
+		2A33C152243F9B26009B9E1D /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				2A33C155243F9B94009B9E1D /* AchievementVC.swift */,
+				2A33C153243F9B3E009B9E1D /* Achievement.storyboard */,
+				2A10773B24416C9100994C8F /* AchievementDetailsVC.swift */,
+				2A10773724414E8000994C8F /* AchievementSection.swift */,
+				2A1077352440553900994C8F /* AchievementCell.swift */,
+				2A1077392441570D00994C8F /* SectionHeader.swift */,
+				2A10773D2441DBB200994C8F /* RadialGradientView.swift */,
 			);
 			path = Achievement;
 			sourceTree = "<group>";
@@ -195,6 +219,9 @@
 			isa = PBXGroup;
 			children = (
 				4F4A2EA024433304005E43EF /* Dashboard */,
+				2A33C152243F9B26009B9E1D /* Achievement */,
+				4FFB10AC243576BD0010838A /* ViewController.swift */,
+				4FFB10AE243576BD0010838A /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -292,6 +319,8 @@
 				4F4A2EAA244338E4005E43EF /* AchievementDashboardViewController.storyboard in Resources */,
 				4F4A2EA524433703005E43EF /* CheckInDashboardViewController.storyboard in Resources */,
 				4F4A2EAE24433909005E43EF /* SummaryDashboardViewController.storyboard in Resources */,
+				2A33C154243F9B3E009B9E1D /* Achievement.storyboard in Resources */,
+				4FFB10B0243576BD0010838A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +346,16 @@
 				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
 				4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */,
 				4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */,
+				4FFB10AD243576BD0010838A /* ViewController.swift in Sources */,
+				2A1077362440553900994C8F /* AchievementCell.swift in Sources */,
+				2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */,
+				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
+				2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */,
+				2A10773E2441DBB200994C8F /* RadialGradientView.swift in Sources */,
+				4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */,
+				2A10773824414E8000994C8F /* AchievementSection.swift in Sources */,
+				4FFB10C7243577290010838A /* EatingHabitsCoreDataStorage.xcdatamodeld in Sources */,
+				2A10773A2441570D00994C8F /* SectionHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
