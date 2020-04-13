@@ -12,13 +12,13 @@ class AchievementVC: UIViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     
-    var selectedImage: UIImage!
+    var selectedItem: String!
     
     let section = [
-        SectionHeader(section: "Silver", badgeName: ["silver1", "silver2", "silver3"]),
-        SectionHeader(section: "Gold", badgeName: ["gold1", "gold2", "gold3"]),
-        SectionHeader(section: "Onyx", badgeName: ["onyx1", "onyx2", "onyx3"]),
-        SectionHeader(section: "Ruby", badgeName: ["ruby1", "ruby2", "ruby3"])
+        SectionHeader(section: "Silver", badgeName: ["silver1", "silver2", "LockedAchievement"]),
+        SectionHeader(section: "Gold", badgeName: ["LockedAchievement", "LockedAchievement", "LockedAchievement"]),
+        SectionHeader(section: "Onyx", badgeName: ["LockedAchievement", "LockedAchievement", "LockedAchievement"]),
+        SectionHeader(section: "Ruby", badgeName: ["LockedAchievement", "LockedAchievement", "LockedAchievement"])
     ]
     
     override func viewDidLoad() {
@@ -34,18 +34,54 @@ class AchievementVC: UIViewController {
 
 }
 
+
+func getSectionName(section: String) {
+    
+}
+
 extension AchievementVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+ //       let image = UIImage(named: section[indexPath.section].badgeName[indexPath.row])
+
         let category = section[indexPath.section].badgeName[indexPath.row]
-        selectedImage = UIImage(named: category)
-        print("pressed \(category)")
-        
+        selectedItem = category
+        //print("pressed \(category)")
+        if selectedItem == "LockedAchievement" {
+            let alert = UIAlertController(title: "Locked!", message: "Keep doing a good habit to unlock your achievements", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        } else {
         performSegue(withIdentifier: "achievementDetails", sender: category)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? AchievementDetailsVC {
+           if selectedItem == "silver1" {
+            detailsVC.image = UIImage (named: "silver1")
+            detailsVC.footer = "You are a breakfast soldier!"
+            detailsVC.desc = "Congratulations on your first 7-day of doing good habit. Keep it up to achieve more!"
+        } else if selectedItem == "silver2" {
+        detailsVC.image = UIImage (named: "silver2")
+        detailsVC.footer = "You value yourself!"
+        detailsVC.desc = "Congratulations on your first 14-day of doing good habit. Keep it up to achieve more!"
+        } else if selectedItem == "silver3" {
+        detailsVC.image = UIImage (named: "silver3")
+        detailsVC.footer = "You are what you are!"
+        detailsVC.desc = "Congratulations on your first 21-day of doing good habit. Keep it up to achieve more!"
+        }
+        
+            
+        }
+        
+        
     }
 
 }
+
 
 extension AchievementVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

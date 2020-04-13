@@ -17,7 +17,6 @@ class AchievementDetailsVC: UIViewController {
     @IBOutlet weak var boardBtn: UIButton!
     
     var image: UIImage!
-    var header: String!
     var footer: String!
     var desc: String!
 
@@ -29,22 +28,15 @@ class AchievementDetailsVC: UIViewController {
         boardBtn.backgroundColor = UIColor(red: 0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 0.3)
         boardBtn.layer.cornerRadius = 8
         
-        headerLabel.text = header
+        headerLabel.text = "Congratulations"
         achievementImage.image = image
         footerLabel.text = footer
         achievementDescription.text = desc
         
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func boardBtnTap(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
+    
 }
