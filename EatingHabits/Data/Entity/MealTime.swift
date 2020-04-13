@@ -49,3 +49,21 @@ extension String {
         }
     }
 }
+
+extension MealTime {
+    struct Constant {
+        static let formatter: DateFormatter = {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "hh:mm a"
+            dateFormatter.amSymbol = "AM"
+            dateFormatter.pmSymbol = "PM"
+            return dateFormatter
+        }()
+        static let breakfastStartTime = formatter.date(from: "07:00 AM")!
+        static let breakfastEndTime = formatter.date(from: "11:59 AM")!
+        static let lunchStartTime = formatter.date(from: "12:00 PM")!
+        static let lunchEndTime = formatter.date(from: "05:59 PM")!
+        static let dinnerStartTime = formatter.date(from: "06:00 PM")!
+        static let dinnerEndTime = formatter.date(from: "08:59 PM")!
+    }
+}

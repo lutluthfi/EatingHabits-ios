@@ -30,6 +30,7 @@
 		4F4A2ECB24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */; };
 		4F4A2ECD24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */; };
 		4FA6203524446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA6203424446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift */; };
+		4FA620372444856600AB05AB /* CaptureCheckInDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA620362444856600AB05AB /* CaptureCheckInDashboardViewController.swift */; };
 		4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10A8243576BD0010838A /* AppDelegate.swift */; };
 		4FFB10AB243576BD0010838A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFB10AA243576BD0010838A /* SceneDelegate.swift */; };
 		4FFB10B5243576C00010838A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFB10B4243576C00010838A /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		4F4A2ECA24437387005E43EF /* HeaderSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4F4A2ECC24440840005E43EF /* ReadingsSummaryDashboardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardTableViewCell.swift; sourceTree = "<group>"; };
 		4FA6203424446BAA00AB05AB /* ReadingsSummaryDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingsSummaryDashboardViewController.swift; sourceTree = "<group>"; };
+		4FA620362444856600AB05AB /* CaptureCheckInDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCheckInDashboardViewController.swift; sourceTree = "<group>"; };
 		4FFB10A5243576BD0010838A /* Eabits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eabits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFB10A8243576BD0010838A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFB10AA243576BD0010838A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				4F4A2EA424433703005E43EF /* CheckInDashboardViewController.storyboard */,
 				4F4A2EA624433740005E43EF /* CheckInDashboardViewController.swift */,
 				4F4A2EB824434C4B005E43EF /* RecommendationTimeCheckInDashboardViewController.swift */,
+				4FA620362444856600AB05AB /* CaptureCheckInDashboardViewController.swift */,
 			);
 			path = CheckIn;
 			sourceTree = "<group>";
@@ -221,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				4F4A2EBB24436431005E43EF /* Entity */,
-				4FFB10C4243577090010838A /* UserDefaultStorage */,
 				4FFB10C3243577030010838A /* CoreDataStorage */,
 			);
 			path = Data;
@@ -236,13 +238,6 @@
 				4F4A2EC0244366FB005E43EF /* MealTimeStorage.swift */,
 			);
 			path = CoreDataStorage;
-			sourceTree = "<group>";
-		};
-		4FFB10C4243577090010838A /* UserDefaultStorage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UserDefaultStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +331,7 @@
 				4F4A2EB424433984005E43EF /* SummaryDashboardViewController.swift in Sources */,
 				4F4A2EA724433740005E43EF /* CheckInDashboardViewController.swift in Sources */,
 				2A1077362440553900994C8F /* AchievementCell.swift in Sources */,
+				4FA620372444856600AB05AB /* CaptureCheckInDashboardViewController.swift in Sources */,
 				2A10773C24416C9100994C8F /* AchievementDetailsVC.swift in Sources */,
 				4FFB10A9243576BD0010838A /* AppDelegate.swift in Sources */,
 				2A33C156243F9B94009B9E1D /* AchievementVC.swift in Sources */,

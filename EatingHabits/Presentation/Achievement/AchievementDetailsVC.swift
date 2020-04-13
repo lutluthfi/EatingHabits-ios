@@ -36,7 +36,9 @@ class AchievementDetailsVC: UIViewController {
     }
     
     @IBAction func boardBtnTap(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.dismiss(animated: true, completion: nil)
+        }
     }
     
 }

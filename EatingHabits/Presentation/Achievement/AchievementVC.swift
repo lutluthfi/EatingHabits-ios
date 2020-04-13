@@ -9,7 +9,7 @@
 import UIKit
 
 class AchievementVC: UIViewController {
-
+    
     @IBOutlet var collectionView: UICollectionView!
     
     var selectedItem: String!
@@ -29,9 +29,9 @@ class AchievementVC: UIViewController {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
         self.navigationController?.navigationBar.topItem?.title = "Achievement"
-
+        
     }
-
+    
 }
 
 
@@ -43,8 +43,8 @@ extension AchievementVC: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
- //       let image = UIImage(named: section[indexPath.section].badgeName[indexPath.row])
-
+        //       let image = UIImage(named: section[indexPath.section].badgeName[indexPath.row])
+        
         let category = section[indexPath.section].badgeName[indexPath.row]
         selectedItem = category
         //print("pressed \(category)")
@@ -54,32 +54,32 @@ extension AchievementVC: UICollectionViewDelegate {
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         } else {
-        performSegue(withIdentifier: "achievementDetails", sender: category)
+            performSegue(withIdentifier: "achievementDetails", sender: category)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailsVC = segue.destination as? AchievementDetailsVC {
-           if selectedItem == "silver1" {
-            detailsVC.image = UIImage (named: "silver1")
-            detailsVC.footer = "You are a breakfast soldier!"
-            detailsVC.desc = "Congratulations on your first 7-day of doing good habit. Keep it up to achieve more!"
-        } else if selectedItem == "silver2" {
-        detailsVC.image = UIImage (named: "silver2")
-        detailsVC.footer = "You value yourself!"
-        detailsVC.desc = "Congratulations on your first 14-day of doing good habit. Keep it up to achieve more!"
-        } else if selectedItem == "silver3" {
-        detailsVC.image = UIImage (named: "silver3")
-        detailsVC.footer = "You are what you are!"
-        detailsVC.desc = "Congratulations on your first 21-day of doing good habit. Keep it up to achieve more!"
-        }
-        
+            if selectedItem == "silver1" {
+                detailsVC.image = UIImage (named: "silver1")
+                detailsVC.footer = "You are a breakfast soldier!"
+                detailsVC.desc = "Congratulations on your first 7-day of doing good habit. Keep it up to achieve more!"
+            } else if selectedItem == "silver2" {
+                detailsVC.image = UIImage (named: "silver2")
+                detailsVC.footer = "You value yourself!"
+                detailsVC.desc = "Congratulations on your first 14-day of doing good habit. Keep it up to achieve more!"
+            } else if selectedItem == "silver3" {
+                detailsVC.image = UIImage (named: "silver3")
+                detailsVC.footer = "You are what you are!"
+                detailsVC.desc = "Congratulations on your first 21-day of doing good habit. Keep it up to achieve more!"
+            }
+            
             
         }
         
         
     }
-
+    
 }
 
 
