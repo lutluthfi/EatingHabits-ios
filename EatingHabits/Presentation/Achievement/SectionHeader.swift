@@ -10,5 +10,5 @@ import Foundation
 
 struct SectionHeader {
     var section: String
-    var badgeName: String
+    var badgeName: [String]
 }
